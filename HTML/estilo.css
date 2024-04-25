@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Jersey+15&family=Jersey+25&family=Space+Grotesk&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #fff;
+}
+html {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+nav {
+    max-width: 1120px;
+    margin: auto;
+    padding: 1.5rem 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-family: monospace;
+    font: 5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.in {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    color: #fff;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+.cansei {
+    background-color: #160227;
+}
+.section1 {
+    max-width:  1120px;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6rem;
+    align-items: center;
+    padding: 0rem 2rem;
+    margin: auto;
+    overflow: clip;
+}
+.hs1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.imagem-container {
+    max-width: 45%;
+    columns: 4;
+    column-gap: 1rem;
+    margin: -1;
+}
+.span {
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.imagem-container > figure > img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+h1 {
+    font-family: monospace;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+hr {
+    border-color: #db5643;
+}
+
+.rosa {
+    color: #d4486f;
+}
+.botao-container {
+    width: 100%;
+    max-width: 1120px;
+    margin: auto;
+    transform: translate("0, -50%");
+    size: 1rem;
+}
+button {
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+button:hover {
+    background-color: #f7114b;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    padding: 3rem 2rem;
+    margin: auto;
+}
+.formheader {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #70aa87;
+}
+.div1-container {
+    padding: 0rem 10rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.form2 {
+    background-color: #5f477e;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: left column;
+    gap: 2rem;
+    flex-basis: 29rem;
+    margin-top: 2rem;
+}
+.cartao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+.h3 {
+    color: #3b5274;
+    font-family: monospace;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+}
+.form3 {
+    background-color: #f7114b;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex; 
+    float: left;
+    gap: 2rem;
+    flex-basis: 29rem;
+}
+
+.form4 {
+    background-color:#f26c4f;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    float: right;
+    gap: 2rem;
+    flex-basis: 29rem;
+}
+footer {
+    text-decoration: none;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background: #160227;
+}
+.pe {
+    font-weight: 500;
+    font-family: monospace;
+    font-size: 1rem;
+}

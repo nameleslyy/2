@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Animais incriveis</title>
+    </head>
+    <body>
+        <style>
+            #circle{
+                float: right;
+                width: 200px;
+                height: 200px;
+                margin: 20px;
+                shape-outside: circle(50%);
+                clip-path: circle(50%);
+                background-color: rgba(30, 117, 13, 0.308);
+            }
+            #ellipse{
+                 position: relative;
+                 width: 200px;
+                 height: 200px;
+                 margin: 20px;
+                 shape-outside: ellipse(50% 20%);
+                 clip-path: ellipse(50% 20%);
+                 border-radius: 50%;
+                 background-color: rgba(30, 117, 13, 0.308);
+            }
+            p {
+                color: rgb(255, 255, 255);
+                font-family: 'Times New Roman', Times, serif;
+                font-variant: small-caps;
+                font-size: 40px;
+                text-align: center;
+                background-color: rgba(30, 117, 13, 0.308);
+                border-radius: 10px;
+            }
+            p1 {
+                font-size: large;
+            }
+            mark {
+                color: white;
+                background-color: rgb(106, 151, 106);
+                opacity: 0.9;
+                border-radius: 6px;
+            }
+            h2 {
+                text-align: left;
+                color: black;
+                font-family: 'Times New Roman', Times, serif;
+                font-variant: small-caps;
+            }
+            span {
+                color: solid black;
+                font-style: italic; 
+            }
+            table {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                width: 80%;
+                height: 80%;
+                border-radius: 10px;
+            }
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 5px;
+                border-radius: 5px;
+            }
+            tr:nth-child(even) {
+                background-color: #dddddd; 
+                border-radius: 10px;
+            }
+            img {
+                width: 150px;
+                height: 150px;
+                border-radius: 10px;
+            }
+            option {
+                color: black;
+            }
+        </style>
+                <h2>Animais fantásticos</h2>
+            <br>
+            <header>
+                <nav>
+                    <ul>
+                        <ol>|<a href="http://127.0.0.1:5500/Site.html">Outro</a>|</ol>
+                    </ul>
+                </nav>
+            </header>
+            <p>enciclopédia dos animais</p>
+            <main>
+                <section>
+                <div id="circle"><img src="Img/Tubarão.jpg" style="width: 200px;height: 200px;clip-path: circle(50%);"></div> <!--Não consegui entender muito o clip path e shape outside-->
+                <h4>Resumo do Reino animal</h4>
+                <p1>Para compreendermos melhor a vida em nosso planeta e a nossa própria espécie, é muito importante entendermos como funciona o reino animal — que, é claro, também é um tema fundamental dentro da biologia. Mas, para começar, o que é, exatamente, um animal?</p1>
+                <div><p1>Animais são todos os organismos multicelulares, eucariontes <i>(ou seja, suas células possuem uma membrana nuclear individualizada e diferentes tipos de organelas)</i> e que têm nutrição heterotrófica <span>(são incapazes de produzir o seu próprio alimento)</span><!--Não seria mais fácil apenas colocar <i>-->. Dentro dessas características essenciais, que incluem os seres humanos, há uma enorme variação anatômica, morfológica e fisiológica.</p1></div>
+                <div><p1>Já mencionamos as principais características comuns a todos os animais, ou seja, que eles são organismos multicelulares, eucariontes e de nutrição heterotrófica. Mas o que mais pode ser percebido em todos eles? Sobre a alimentação heterotrófica,<mark> é importante destacar que, por não produzirem seu próprio alimento, os animais têm a necessidade de se alimentarem de outros seres vivos (animais ou não)</mark>. Por causa disso, também podemos dizer que os seres animais são aclorofilados, ou seja, desprovidos da clorofila que possibilita a realização da fotossíntese e, consequentemente, a geração do próprio alimento. E quando o assunto é respiração, ela acontece de forma aeróbica, ou seja, é necessária a participação do oxigênio — que pode ser retirado do ar ou da água, de acordo com cada espécie. Outro ponto comum é que todo o Reino Animalia possui uma estrutura chamada de blástula ou um blastocisto, que aparece durante a fase embrionária após a formação do zigoto.</p1></div>
+                </section>
+            </main>
+            <h4>Exemplo:</h4>
+                <table>
+                    <tr>
+                        <th>Mamifero</th>
+                        <th>Anfibio</th>
+                        <th>Ave</th>
+                    </tr>
+                    <tr>
+                        <td>Peixe boi</td>
+                        <td>Axalote</td>
+                        <td>Tucano</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.pinimg.com/736x/76/66/dc/7666dccb2fcfb87f4339054a49cbfa46.jpg"></img></td>
+                        <td><img src="https://i.pinimg.com/236x/72/85/01/7285013b09c9b9ed050faedd0b6fdc81.jpg"></img></td>
+                        <td><img src="https://i.pinimg.com/236x/a3/0c/87/a30c87ae67c97479c16ba8da1717d14a.jpg"></img></td>
+                    </tr>
+                    <tr>
+                        <td>Os peixes-bois são mamíferos aquáticos da ordem dos sirênios. O nome foi escolhido por causa do canto desses animais, que fez com que navegadores o associassem às mitológicas sereias.</td>
+                        <td>O axolote (Ambystoma mexicanum) é uma salamandra aquática originária do México, conhecida pela sua capacidade de regenerar sua medula espinhal, seu coração e seus membros.</td>
+                        <td>Tucano é uma ave pertencente à família Ramphastidae, que engloba animais com bico longo, colorido, cortante e leve. Esses animais ocorrem apenas no Neotrópico, distribuindo-se do México à Argentina. </td>
+                    </tr>
+                </table>
+                <label for="animal-choice"><h4>Escolha um animal:</h4></label>
+                <select list="type-animals" id="animal-choice" name="animal-choice">
+                <datalist id="type-animals">
+                    <optgroup label="Mamifero">
+                       <option value="Peixe-boi"></option>
+                       <option value="Vaca"></option>
+                    </optgroup>
+                    <optgroup label="Anfibio">
+                       <option value="Axalote"></option>
+                       <option velue="Salamandra"></option>
+                    </optgroup>
+                       <optgroup label="Ave">
+                       <option value="Tucano"></option>
+                       <option value="Arara"></option>
+                    </optgroup>
+                </select>
+                </datalist>
+                <input type="submit" value="submit">
+                <dl>
+                    <dt><h4>Lorem Ipsum</h4></dt>
+                    <dd>  
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pellentesque lorem non facilisis vehicula. Pellentesque molestie luctus volutpat. Suspendisse ut varius mi. In laoreet arcu velit, gravida imperdiet turpis rutrum non. Nulla et auctor dolor. Proin nec massa tortor. Proin ac fringilla nunc, non dapibus ligula. Nullam sit amet ex leo. Donec sapien arcu, volutpat nec volutpat et, fringilla ac risus. Aenean tincidunt velit et urna tristique, eu rutrum purus pellentesque. Vivamus vulputate urna lacus, quis lacinia libero hendrerit et. Duis molestie odio velit, et rutrum sem placerat eu. Sed scelerisque condimentum risus vel maximus.
+                    </dd>
+                </dl>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <address>
+                    Escrito por <a href="mailto:estoucomsono@exemplo.com">Vi</a><br>
+                    Não nos visite:❤️<br>
+                    Exemplo.com<br>
+                </address>
+                <footer><em>Em parceria com o IBAMA</em><br>Direitos reservados ao autor</footer>
+    </body>
+</html>

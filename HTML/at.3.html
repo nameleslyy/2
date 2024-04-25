@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulários em HTML</title>
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    </head>
+    <body>
+        <header>
+            <h1>Estudando Formulários</h1>
+            <nav>
+                <a href="/sobre">Sobre</a> |
+                <a href="/servicos">Serviços</a> |
+                <a href="/contato">Contato</a>
+            </nav>
+        </header>
+        <main>
+            <h2>Conteudo</h2>
+            <article>
+                <h2 id="/sobre">Sobre</h2>
+                <p>Esta é uma página de exemplo, criada para demonstrar o uso da tag form do HTML</p>
+                <img src="Img/Tubarão.jpg" alt="Imagem não encontrada" style="border-radius: 20%;"></img>
+            </article>
+            <section>
+                <h2 id="/servicos">Serviços</h2>
+                <ul>
+                
+                    <li>Web Design</li>
+                    <li>Desenvolvimento</li>
+                    <li>Hospedagem</li>
+                </ul>
+            </section>
+            <section>
+                <h2 id="/contato">Contato</h2>
+                <p>Entre em contato conosco</p>
+            </section>
+        </main>
+        <br>
+        <div class="container">
+           <form><br>
+              <label for="name">Nome:</label><br>
+              <input type="text" id="name" name="name" placeholder="Nome..."><br>
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email" placeholder="Email..."><br>
+              <label for="subject">Mensagem:</label><br>
+              <textarea id="subject" name="subject" placeholder="Escreva algo..." style="height: 200px;"></textarea>
+              <input type="submit" value="submit">
+           </form>
+       </div>
+       <aside>
+           <h2>Barra lateral</h2>
+           <p>Algumas informações adicionais podem ser exibidas aqui</p>
+       </aside>
+       <footer>
+         <address>
+            <p>&copy;2024 Minha empresa. Todos os direitos reservados</p><br>
+            Email: <a href="mailto:exemplo@exemplo.com">Exemplo</a><br>
+            <Exemplo class="com">Exemplo.com</Exemplo><br>
+            Contato:(00)00000-0000<br>
+            Endereço: Av. Exemplo, 123 - Cidade Exemplo - Brasil
+         </address> 
+       </footer>
+    </body>
+</html>
