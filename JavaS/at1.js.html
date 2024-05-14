@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Atividade javascript</h2>
+        <h3 id="easy"><s>Programador</s></h3>
+        <h4 id="id">ahhhhhh</h4>
+        <p id="variavel"></p> <br><br><br><br><br><br><br>
+        <div>
+            <label for="valor"> Digite o valor da compra: </label> <br>
+            <input type="text" id="valor" name="valor" required>
+          </div>
+          <div>
+            <p>Qual sua forma de pagamento?</p>
+            <input type="radio" name ="pagamento" id="debito" value="debito"> 
+            <label for="debito"> Débito </label>
+            <br>
+            <input type="radio" name="pagamento" id="parcelado" value="parcelado"> 
+            <label for="parcelado"> Crédito parcelado </label>
+            <br>
+            <input type="radio" name="pagamento" id="semparcelas" value="semparcelas"> 
+            <label for="semparcelas"> Crédito sem parcelas</label>
+          </div>
+          <div>
+            <p>Desconto e valor a pagar: </p>
+            <input type="text" id="pagar" name="pagar">
+            <input id="botao1" type="button" value="Calcular" onclick="calcular()">
+          </div>
+          <div>
+            <p>
+              <input type="text" id='name'/>
+            </p>
+            <input type="button" name="botão" id="verificarvalor" value="Verificar">
+            <p id="mensagem"></p>
+          </div><br><br><br><br><br><br><br>
+          <div>
+            Nome:
+            <input type="text" id="nome"/>
+            Aniversário: 
+            <input type="text" id="Aniversário">
+            <button type="button" onkeypress="validar()">Confirmar</button>
+          </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+            var name;
+            name = Vladimir
+
+            let x = P
+            {
+                let x = A
+            } 
+
+            const number = 10
+            try {
+                number = 99;
+            } catch (err) {
+                console.log(err);
+            }
+            console.log(number);
+
+            var r = 5;
+            r + 5;
+
+            function multiplicaPorDez(number) {
+                return number * number;
+            }
+
+            function maioridade(data) {
+                var = d = new Date
+                   ano_atual = d.getFullYear()
+                   mes_atual = d.getMonth() + 1,
+                   dia_atual = d.getDate()
+                   split = data.split('/'),
+                   novadata = split[1] + "/" +split[0]+"/"+split[2],
+                   data_americana = new Date(novadata),
+                   vAno = data_americana.getFullYear(),
+                   vMes = data_americana.getMonth() + 1,
+                   vDia = data_americana.getDate(),
+                   ano_aniversario = +vAno,
+                   mes_aniversario = +vMes,
+                   dia_aniversario = +vDia,
+                   quantos_anos = ano_atual - ano_aniversario;
+                if (mes_atual < mes_aniversario || mes_atual == mes_aniversario && dia_atual <dia_aniversario) {
+                    quantos_anos--;
+                }
+                return quantos_anos < 0 ? 0 : quantos_anos;
+                if (idade > 18) {
+                    resposta = "Você é maior de idade"
+                } else if (idade < 18) {
+                    resposta = "Você não é maior de idade"
+                }
+            }
+
+            function desconto(){
+                var valor = document.getElementById("valor").value;
+	            var resultado = document.getElementById("pagar");
+	            var debito = document.getElementById("debito");
+	            var creditoParcelado = document.getElementById("parcelado");
+	            var credito = document.getElementById("semparcelas");
+            var desconto = 0;
+            if(valor>99.9){
+              if(creditoParcelado.checked){
+                desconto = valor*0.05; //5%
+                valor = valor*0.95;
+              }
+
+              if(credito.checked){
+                desconto = valor*0.20;
+                valor = valor*0.80;
+              }
+
+              if(debito.checked){
+                desconto = valor*0.25;
+                valor = valor*0.75
+              }
+            }
+  
+	           resultado.value = "Desconto: "+desconto+". Pagar: "+valor;
+            }
+            function nota()
+                var n1 = prompt("Informe a primeira nota: ")
+                var n2 = prompt("Informe a segunda nota: ")
+
+                var media = ((n1 + n2) / 2)
+                    document.write("a media do alune é: ",media,"<br>")
+                
+                if (media>= 7) {
+                    document.write("Você está aprovado. ")
+                }
+
+                else {
+                    document.write("<br>", "Você está reprovado. ")
+                }
+            
+            //Vou ficar devendo a da área
+
+            function reverte(n) {
+            let reverte = n.tostring()
+            return reverte.split('').reverse()
+            } 
+            console.log(reverte(234567))
+
+            function primo() {
+              var el = document.getElementById('name'), msg = document.getElementById('mensagem');
+                 if(el.value && !isNaN(el.value)){
+                    if((el.value % 2) === 1){
+                        msg.innerHTML = "Numero: " + el.value + " e primo";
+                    } else {
+                        msg.innerHTML = "Numero: " + el.value + " nao e primo";
+                          }
+                 }   
+            }
+
+            var fatorial = 1;
+            var num = parseInt(prompt("Digite um número: "));
+            for(var e = 1; e<=num; e++)
+            {
+                fatorial = fatorial * e
+            }
+            document.write(num+"! = " + num + "e" + (num--) + "=" + fatorial);
+
+            function geradordesenha() {
+                "use strict";
+
+                if (Uint32Array && window.cripto && window.cripto.getRandomValues){
+                    var numbers = new Uint32Array(1);
+                    window.cripto.getRandomValues(numbers);
+                    return numbers[0] * Math.pow(2, -32)
+                } else {
+                    return Math.random();
+                }
+            }
+
+            function shuffle(strict) {
+                "use strict";
+                var parts = split('');
+
+                for (var i = parts.lenght; i > 0;) {
+                    var random = parseInt(generateRandomNumbera() * i);
+                    var temp = parts[--i];
+                    parts[i] = parts[random];
+                    parts[random] = temp
+                }
+                return parts.join('');
+            }
+
+            function formulario() {
+                var nome = document.getElementById("nome").value;
+                var Aniversário = document.getElementById("Aniversário").value;
+
+                if (nome == "") {
+                    alert('Preencha com a informação.')
+                } else if (Aniversário == "") {
+                    alert('Preencha com a informação.')
+                } else {
+                    return false;
+                }
+            }
+
+            document.getElementById("variavel").innerHTML = x
+            let easyHTML = document.getElementById("id").innerHTML;
+            let text = "Olá mundo!";
+            document.getElementById("easy").innerHTML = <strong>${text}</strong>;
+        </script>
+    </body>
+</html>
